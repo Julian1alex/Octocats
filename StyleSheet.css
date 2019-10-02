@@ -1,73 +1,80 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
 body {
-display: flex;
-flex-flow: row;
-
-}
-
-img {display: flex;
-    
-}
-
-ul{
-list-style: none;
-   height: 50px;
-}
-
-li.octocat {
-    flex-flow: row;
-}
-
-
-.octocat img{
     display: flex;
-    flex-flow: row;
-    border: black;
-    border-style: solid;
-    width: 300px;
-    height: 300px;
     justify-content: center;
-    flex-direction: row;
-    margin: 5px;
-
+    background: blue;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.authors {
+img {
     display: flex;
-    flex-flow: row;
-   
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:300px;
+    height:300x;
+    margin: 5px;
+    background: white;
+    border: 5px solid black;
 }
 
 .authors img {
     display: flex;
-    flex-flow: row;
-    width: 30px;
-    height: 30px;
-    flex-direction: column;
-    
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:50px;
+    margin: none;
+    height:50px;
+    border: none;
+    background: purple;
+}   
+
+ul {
+    display: flex; 
+    background: yellow;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    list-style: none;
 }
 
-.authors li {
+li .authors {
+    display: flex; 
+    background: brown; 
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.image-caption {
+    padding-left: 3
+    px; padding-right: 3px; 
+    background: orange;
+}
+
+.image-number ::before{ content: "#";
+}
+
+div .image-footer {
     display: flex;
-
-}
-
-.octodex { display: flex;
-flex-direction: row;
-}
-
-div.image-footer {
-
-    display:flex;
     flex-wrap: wrap;
     position: relative;
-    height: 50px;
-    border-bottom: 1px solid black;
-    justify-content: space-between;}
+    height: 50px; 
+    border-bottom: 5px;
+    justify-content: space-between;
+    background: pink;
+}
 
-.image-number::before {
-    content: "#"}
+.authors li{
+    display: flex;
+}
 
-
-.image-caption span{ padding-left: 3px;
-    padding-right: 3px;
-}   
+.authors {
+    display: flex;
+}
