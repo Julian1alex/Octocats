@@ -1,0 +1,102 @@
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+html { 
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13;
+}
+
+ul {
+    list-style: none;
+}
+.image-caption, .authors li {
+    align-items: center;
+}
+
+.image-caption span, .image-caption a { 
+    font-weight: bold;
+}
+
+.image-caption span {
+    color: #555555; 
+    padding: 0 3px;
+} 
+
+
+.image-caption a {
+    color: #111111;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.image-caption a:hover {text-decoration: underline;}
+
+.image-footer { 
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.image-number::before {
+    content: "#";
+}
+
+.image-number {
+    font-weight: bold;
+    color: #999999;
+    font-size: 12px;
+}
+
+.authors img {
+    width: 20px; 
+    margin: 0 2px;
+}
+
+.octocat {
+    margin:0 10px;
+    position: relative;
+}
+
+.octocat::after{
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 7px 5px 0 5px;
+    top:300px;
+    right:5px;
+    border-color: #999999 transparent transparent transparent;
+    position: absolute;
+}
+
+.octocat > a img {
+    width: 300px;
+    border: 1px solid #999999;
+}
+
+
+
+.octodex, .image-footer, .image-caption {
+    display: flex
+}
+
+a {text-decoration: underline;}
+
+.authors /*This is the container-box around all of the authors images*/ {
+    display: flex
+}
+
+li .authors /*This is the box around all of the authors images*/ { 
+    display: flex
+}
+
+ul .authors {padding: 0;}
+
+.authors img {margin: 0;}
